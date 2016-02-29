@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>What is the capital of China?</p>
+<form>
+  <input type="radio" name="city" id="first_choice" value="beijing" checked> Beijing<br>
+  <input type="radio" name="city" id="second_choice" value="shanghai"> Shanghai<br>  
+</form> 
+<br>
+<button type="button" onclick="feedback()">Submit</button>
+<br>
+<p id="demo"></p>
+
+<script>
+function feedback() {
+    if(document.getElementById("first_choice").checked){
+      document.getElementById("demo").innerHTML = "You are right!";
+    } else{
+      document.getElementById("demo").innerHTML = "You are wrong!";
+    }
+}
+</script>
+
+</body>
+</html>
